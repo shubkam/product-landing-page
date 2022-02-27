@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="widh=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel ="stylesheet">
+      <style>
+          :root{
+  background-color: #eee;
+  font-family: Lato;
+}
+header{
+  text-align:center;
+  display:flex;
+  justify-content: space-between;
+}
+#header-img{ 
+  margin-top:10px;
+  max-width:20%;
+  height: 15%;  
+}
+
+button{
+  background: #f1c40f;
+  text-transform: uppercase;
+  font-weight: 900;  
+  margin-top: 10px;
+  border: none;
+  padding: 5px 20px;
+  color:black;
+}
+.nav-link{
+  text-transform: capitalize;
+  margin: 0 1.5em 0 1.5em;
+  text-decoration:none;  
+  color: #000;
+ 
+}
+section{
+  text-align: left;
+  margin:auto;
+  width: 50%;
+  margin-top: 5%;
+}
+.div{
+  margin-bottom:10%;
+  display:flex;
+}
+#features div img{
+  width: 7%;
+  height:7%; 
+  margin-right: 5%;  
+  align-self: center;
+}
+
+#pricing{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#pricing div{
+  border: 1px solid black; 
+  width: calc(100%/3); 
+  border-radius: 3px;
+  text-align:center;
+  margin:10px;
+}
+h4{
+  margin-top:0;
+  text-transform:uppercase;
+  background-color: lightgray;
+  padding:10px;
+}
+
+#pricing div ul {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+}
+#pricing div ul li {
+    margin: 10px 0;
+}
+#pricing div button{
+  font-weight: normal;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+/* Media queries begin*/
+@media (max-width: 375px){
+  .nav-link{
+    margin: 0 1em 0 1em;
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 800px){
+   #video{
+  margin:auto;
+  margin-left:10%;
+  max-width:100%;    
+  }
+}
+@media (max-width: 800px){
+  #video{
+    margin-left:0;
+    max-width:100%;
+    height:auto;
+  }
+}
+@media screen and (max-width:1000px)
+{
+   #pricing{
+    flex-direction:column;    
+  }
+  #pricing div{
+     width:100%;
+    margin-left, margin-right:auto;
+  }
+  
+  #header{
+    display:flex;
+    flex-direction:column;
+  }
+  #header-img{
+    order: 1;   
+    max-width:100%;
+    
+  }
+  #nav-bar{
+    order: 2;  
+    max-width:100%;
+    margin-top:5px;
+  }
+  #heading{
+    order: 3; 
+  }
+  
+  #features div img{
+  width: 0;
+  height: 0; 
+  margin:0; 
+  display: none;
+  }
+   
+ 
+}
+
+      </style>
+  </head>
+  
+  <body>
+  
+      <header id="header">  
+      <img src="https://i.stack.imgur.com/ezfZ0.png" alt="" id="header-img">      
+      <div id="heading">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <h2>Handcrafted, home-made masterpieces</h2>
+          <input type="email" placeholder="Enter your email address" id="#email" tabindex=1 required>    <br>
+          <button type="submit" id="submit" tabindex=2>get started</button>
+        </form>
+      </div>
+      <nav id="nav-bar">
+          <a href="#features" class="nav-link">features</a>
+          <a href="#how_it_works" class="nav-link">how it works</a>
+          <a href="#pricing" class="nav-link">pricing</a>
+      </nav>
+</header>
+<section id="features">
+  <div class="div">
+      <img src="https://github.com/shubkam/website/blob/main/premium.png?raw=true" alt="">
+    <div>
+        <h2>Premium Materials</h2>
+        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</label></p>
+    </div>
+  </div>
+  <div class="div">
+      <img src="https://github.com/shubkam/website/blob/main/deliverytruck.png?raw=true"
+           alt="">
+    <div>
+       <h2>Fast Shipping</h2>
+       <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+    </div>
+</div>
+<div class="div">
+  <img src="https://github.com/shubkam/website/blob/main/access.png?raw=true" alt="">
+  <div>
+      <h2>Quality Assurance</h2>
+      <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+  </div>
+</div>
+</section>
+<section id="how_it_works">
+      
+        <iframe width="560" height="560" id="video"src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
+       
+      
+</section>
+<section id="pricing">
+      <div>
+        <h4>tenor trombone</h4>
+        <ul>
+          <li><strong>$600</strong></li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ul>
+        <button type="submit"> Select</button>
+      </div>
+      <div>
+        <h4>bass trombone</h4>
+        <ul>
+          <li><strong>$900</strong></li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ul>
+        <button type="submit"> Select</button>
+      </div>
+      <div>
+        <h4>valve trombone</h4>
+        <ul>
+          <li><strong>$1200</strong></li>
+          <li>Plays similar to a Trumpet</li>
+          <li>Great for Jazz Bands</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ul>
+        <button type="submit"> Select</button>
+      </div>
+</section>
+  
+  </body>
+</html>
